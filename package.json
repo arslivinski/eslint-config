@@ -1,0 +1,23 @@
+{
+  "name": "@arslivinski/eslint-config",
+  "version": "1.0.0-alpha.0",
+  "description": "Personal set of ESLint configurations",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "author": {
+    "name": "Anderson Roberto Slivinski",
+    "url": "https://github.com/arslivinski"
+  },
+  "homepage": "https://github.com/arslivinski/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arslivinski/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arslivinski/eslint-config/issues"
+  }
+}
