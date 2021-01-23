@@ -1,13 +1,23 @@
 {
   "name": "@arslivinski/eslint-config",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Personal set of ESLint configurations",
   "license": "ISC",
   "main": "index.js",
-  "scripts": {},
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "scripts": {
+    "test": "eslint-find-rules --unused",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "eslint": "^7.18.0"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-find-rules": "^3.6.1"
+  },
   "author": {
     "name": "Anderson Roberto Slivinski",
     "url": "https://github.com/arslivinski"
