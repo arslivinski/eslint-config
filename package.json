@@ -12,7 +12,8 @@
     "eslint": "^7.18.0"
   },
   "dependencies": {
-    "confusing-browser-globals": "^1.0.10"
+    "confusing-browser-globals": "^1.0.10",
+    "eslint-plugin-import": "^2.22.1"
   },
   "devDependencies": {
     "eslint": "^7.18.0",

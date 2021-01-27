@@ -3,6 +3,7 @@
 const confusingBrowserGlobals = require('confusing-browser-globals');
 
 const OFF = 'off';
+const WARN = 'warn';
 const ERROR = 'error';
 
 module.exports = {
@@ -19,6 +20,7 @@ module.exports = {
     sourceType: 'module',
   },
   reportUnusedDisableDirectives: true,
+  plugins: ['import'],
   rules: {
     'accessor-pairs': OFF,
     'array-bracket-newline': [ERROR, { multiline: true }],
@@ -445,6 +447,81 @@ module.exports = {
     'wrap-regex': OFF,
     'yield-star-spacing': [ERROR, 'after'],
     'yoda': ERROR,
+
+    'import/default': ERROR,
+    'import/dynamic-import-chunkname': OFF,
+    'import/export': ERROR,
+    'import/exports-last': ERROR,
+    'import/extensions': [ERROR, 'ignorePackages'],
+    'import/first': ERROR,
+    'import/group-exports': ERROR,
+    'import/max-dependencies': OFF,
+    'import/named': ERROR,
+    'import/namespace': ERROR,
+    'import/newline-after-import': ERROR,
+    'import/no-absolute-path': ERROR,
+    'import/no-amd': ERROR,
+    'import/no-anonymous-default-export': [
+      ERROR,
+      {
+        allowArray: false,
+        allowArrowFunction: false,
+        allowAnonymousClass: false,
+        allowAnonymousFunction: false,
+        allowCallExpression: false,
+        allowLiteral: false,
+        allowObject: false,
+      },
+    ],
+    'import/no-commonjs': ERROR,
+    'import/no-cycle': [ERROR, { ignoreExternal: true }],
+    'import/no-default-export': ERROR,
+    'import/no-deprecated': WARN,
+    'import/no-duplicates': [ERROR, { considerQueryString: true }],
+    'import/no-dynamic-require': ERROR,
+    'import/no-extraneous-dependencies': [
+      ERROR,
+      {
+        devDependencies: false,
+        optionalDependencies: true,
+        peerDependencies: true,
+      },
+    ],
+    'import/no-internal-modules': OFF,
+    'import/no-mutable-exports': ERROR,
+    'import/no-named-as-default': ERROR,
+    'import/no-named-as-default-member': OFF,
+    'import/no-named-default': ERROR,
+    'import/no-named-export': OFF,
+    'import/no-namespace': ERROR,
+    'import/no-nodejs-modules': ERROR,
+    'import/no-relative-parent-imports': OFF,
+    'import/no-restricted-paths': OFF,
+    'import/no-self-import': ERROR,
+    'import/no-unassigned-import': ERROR,
+    'import/no-unresolved': ERROR,
+    'import/no-unused-modules': [
+      ERROR,
+      {
+        missingExports: true,
+        unusedExports: true,
+      },
+    ],
+    'import/no-useless-path-segments': ERROR,
+    'import/no-webpack-loader-syntax': ERROR,
+    'import/order': [
+      ERROR,
+      {
+        'groups': ['builtin', 'external', 'internal', 'parent', 'sibling'],
+        'newlines-between': 'never',
+        'alphabetize': {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
+    'import/prefer-default-export': OFF,
+    'import/unambiguous': ERROR,
   },
   overrides: [
     {
@@ -458,6 +535,17 @@ module.exports = {
       rules: {
         'no-console': OFF,
         'strict': [ERROR, 'global'],
+        'import/no-commonjs': OFF,
+        'import/no-extraneous-dependencies': [
+          ERROR,
+          {
+            devDependencies: true,
+            optionalDependencies: false,
+            peerDependencies: false,
+          },
+        ],
+        'import/no-nodejs-modules': OFF,
+        'import/no-unused-modules': OFF,
       },
     },
   ],
