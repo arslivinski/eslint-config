@@ -32,13 +32,7 @@ module.exports = {
         checkForEach: true,
       },
     ],
-    'array-element-newline': [
-      ERROR,
-      {
-        ArrayExpression: { multiline: true },
-        ArrayPattern: 'never',
-      },
-    ],
+    'array-element-newline': [ERROR, { multiline: true }],
     'arrow-body-style': [ERROR, 'as-needed', { requireReturnForObjectLiteral: true }],
     'arrow-parens': [ERROR, 'always'],
     'arrow-spacing': ERROR,
