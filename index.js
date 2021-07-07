@@ -33,6 +33,7 @@ module.exports = {
       },
     ],
     'array-element-newline': [ERROR, 'consistent'],
+    'arrow-body-style': OFF,
     'arrow-parens': [ERROR, 'always'],
     'arrow-spacing': ERROR,
     'block-scoped-var': ERROR,
