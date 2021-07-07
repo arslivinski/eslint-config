@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Removed some settings that are not aplied when extending
+
 ## [1.0.0-alpha.3] - 2021-07-06
 
 ### Changed
