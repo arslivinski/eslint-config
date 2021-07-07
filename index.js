@@ -9,6 +9,7 @@ const ERROR = 'error';
 module.exports = {
   ignorePatterns: ['!.*.js', 'build/', 'coverage/', 'dist/', 'node_modules/'],
   env: {
+    browser: true,
     es6: true,
     es2017: true,
     es2020: true,

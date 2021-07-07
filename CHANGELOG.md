@@ -5,6 +5,7 @@
 ### Changed
 
 - Removed some settings that are not aplied when extending
+- Add the 'browser' environment
 
 ## [1.0.0-alpha.3] - 2021-07-06
 

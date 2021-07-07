@@ -1,6 +1,6 @@
 # @arslivinski/eslint-config
 
-A very opinionated ESLint configuration.
+A very opinionated ESLint configuration, mostly focused on web development.
 
 ## Usage
 
