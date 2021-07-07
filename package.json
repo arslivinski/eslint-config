@@ -5,11 +5,19 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "test": "eslint-find-rules --unused",
+    "test": "npm run -s test:base && npm run -s test:react",
+    "test:base": "eslint-find-rules --unused index.js",
+    "test:react": "eslint-find-rules --unused react.js --no-core",
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^7.30.0"
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react": {
+      "optional": true
+    }
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.10",
@@ -17,7 +25,8 @@
   },
   "devDependencies": {
     "eslint": "7.30.0",
-    "eslint-find-rules": "^3.6.1"
+    "eslint-find-rules": "^3.6.1",
+    "eslint-plugin-react": "^7.24.0"
   },
   "author": {
     "name": "Anderson Roberto Slivinski",

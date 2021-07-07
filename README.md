@@ -27,3 +27,25 @@ Now you can run:
 ```sh
 npm exec eslint -- ./
 ```
+
+## React
+
+This configuration also provides a set of rules for React projects. To use you
+have to install the required plugin
+
+```sh
+npm install -D eslint-plugin-react
+```
+
+and extend this config on your `.eslintrc.js`
+
+```js
+'use strict';
+
+module.exports = {
+  extends: [
+    '@arslivinski'
+    '@arslivinski/eslint-config/react'
+  ],
+};
+```

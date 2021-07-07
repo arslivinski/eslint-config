@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- React configuration
+
 ### Changed
 
 - Removed some settings that are not aplied when extending
