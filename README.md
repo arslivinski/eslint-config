@@ -4,12 +4,12 @@ A very opinionated ESLint configuration.
 
 ## Usage
 
-This configuration requires ESLint >= 7.18.
+This configuration requires ESLint >= 7.30.0
 
 To install, run:
 
 ```sh
-npm install -D eslint@^7.18.0 @arslivinski/eslint-config
+npm install -D eslint@^7.30.0 @arslivinski/eslint-config
 ```
 
 Then create a `.eslintrc.js`:

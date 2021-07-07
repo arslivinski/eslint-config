@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Update ESLint to 7.30.0
+
 ## [1.0.0-alpha.2] - 2021-07-01
 
 ### Changed
