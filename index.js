@@ -23,7 +23,7 @@ module.exports = {
   plugins: ['import'],
   rules: {
     'accessor-pairs': OFF,
-    'array-bracket-newline': [ERROR, { multiline: true }],
+    'array-bracket-newline': [ERROR, 'consistent'],
     'array-bracket-spacing': [ERROR, 'never'],
     'array-callback-return': [
       ERROR,
@@ -32,8 +32,7 @@ module.exports = {
         checkForEach: true,
       },
     ],
-    'array-element-newline': [ERROR, { multiline: true }],
-    'arrow-body-style': [ERROR, 'as-needed', { requireReturnForObjectLiteral: true }],
+    'array-element-newline': [ERROR, 'consistent'],
     'arrow-parens': [ERROR, 'always'],
     'arrow-spacing': ERROR,
     'block-scoped-var': ERROR,
