@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.4] - 2021-07-06
+
 ### Added
 
 - React configuration
