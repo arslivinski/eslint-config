@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.3] - 2021-07-06
+
+### Changed
+
 - Update ESLint to 7.30.0
 - Changed array-bracket-newline and array-element-newline to 'consistent'
 - Turned off arrow-body-style
