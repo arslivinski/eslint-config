@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.5] - 2021-08-28
+
 ### Changed
 
 - import/no-unused-modules turned off, as this rule prevents incremental commits
