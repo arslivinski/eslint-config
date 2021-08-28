@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- import/no-unused-modules turned off, as this rule prevents incremental commits
+
 ## [1.0.0-alpha.4] - 2021-07-06
 
 ### Added

@@ -496,13 +496,7 @@ module.exports = {
     'import/no-self-import': ERROR,
     'import/no-unassigned-import': ERROR,
     'import/no-unresolved': ERROR,
-    'import/no-unused-modules': [
-      ERROR,
-      {
-        missingExports: true,
-        unusedExports: true,
-      },
-    ],
+    'import/no-unused-modules': OFF,
     'import/no-useless-path-segments': ERROR,
     'import/no-webpack-loader-syntax': ERROR,
     'import/order': [
