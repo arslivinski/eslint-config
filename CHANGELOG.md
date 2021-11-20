@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.6] - 2021-11-20
+
 ### Added
 
 - no-unused-private-class-members
