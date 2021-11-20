@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+### Added
+
+- no-unused-private-class-members
+- react/no-arrow-function-lifecycle
+- react/no-invalid-html-attribute
+- react/no-namespace
+- react/no-unused-class-component-methods
+- react/prefer-exact-props
+
+### Changed
+
+- Update ESLint to 8.2.0
+- Update eslint-plugin-import to 2.25.3
+- Update eslint-plugin-react to 7.27.1
+- Update parser eo ES2022
+- react/jsx-max-props-per-line to accept only 1 prop per line when multiline
+
 ## [1.0.0-alpha.5] - 2021-08-28
 
 ### Changed

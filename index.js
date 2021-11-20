@@ -16,7 +16,7 @@ module.exports = {
     es2021: true,
   },
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 2022,
     sourceType: 'module',
   },
   reportUnusedDisableDirectives: true,
@@ -310,6 +310,7 @@ module.exports = {
     'no-unsafe-finally': ERROR,
     'no-unsafe-negation': [ERROR, { enforceForOrderingRelations: true }],
     'no-unsafe-optional-chaining': [ERROR, { disallowArithmeticOperators: true }],
+    'no-unused-private-class-members': ERROR,
     'no-unused-expressions': OFF,
     'no-unused-labels': ERROR,
     'no-unused-vars': [
