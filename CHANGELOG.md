@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Update ESLint to 8.3.0
+
 ## [1.0.0-alpha.7] - 2021-11-29
 
 ### Changed

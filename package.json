@@ -11,7 +11,7 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^8.2.0",
+    "eslint": "^8.3.0",
     "eslint-plugin-react": "^7.27.1"
   },
   "peerDependenciesMeta": {
@@ -24,7 +24,7 @@
     "eslint-plugin-import": "^2.25.3"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
+    "eslint": "^8.3.0",
     "eslint-find-rules": "^4.0.0",
     "eslint-plugin-react": "^7.27.1"
   },
