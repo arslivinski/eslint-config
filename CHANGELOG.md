@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- max-len changed to 120
+
 ## [1.0.0-alpha.6] - 2021-11-20
 
 ### Added
