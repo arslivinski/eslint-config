@@ -4,7 +4,7 @@ A very opinionated ESLint configuration, mostly focused on web development.
 
 ## Usage
 
-This configuration requires ESLint >= 8.3.0
+This configuration requires ESLint >= 8.4.0
 
 To install, run:
 
