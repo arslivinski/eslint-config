@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.10] - 2021-12-21
+
 ### Added
 
 - prefer-object-has-own
