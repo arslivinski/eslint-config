@@ -4,12 +4,12 @@ A very opinionated ESLint configuration, mostly focused on web development.
 
 ## Usage
 
-This configuration requires ESLint >= 8.4.0
+This configuration requires ESLint >= 8.5.0
 
 To install, run:
 
 ```sh
-npm install -D eslint@^8.3.0 @arslivinski/eslint-config
+npm install -D eslint@^8.5.0 @arslivinski/eslint-config
 ```
 
 Then create a `.eslintrc.js`:
@@ -44,7 +44,7 @@ and extend this config on your `.eslintrc.js`
 
 module.exports = {
   extends: [
-    '@arslivinski'
+    '@arslivinski/eslint-config'
     '@arslivinski/eslint-config/react'
   ],
 };

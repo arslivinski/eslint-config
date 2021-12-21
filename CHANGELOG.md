@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### Added
+
+- prefer-object-has-own
+
+### Changed
+
+- Update ESLint to 8.5.0
+- Update confusing-browser-globals to 1.0.11
+
 ## [1.0.0-alpha.9] - 2021-12-12
 
 ### Changed

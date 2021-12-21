@@ -385,6 +385,7 @@ module.exports = {
     'prefer-exponentiation-operator': ERROR,
     'prefer-named-capture-group': OFF,
     'prefer-numeric-literals': ERROR,
+    'prefer-object-has-own': ERROR,
     'prefer-object-spread': ERROR,
     'prefer-promise-reject-errors': ERROR,
     'prefer-regex-literals': ERROR,
