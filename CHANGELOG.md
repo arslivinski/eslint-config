@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.11] - 2022-03-06
+
 ### Added
 
 - Added env globals for ES2016, ES2018, ES2019 and ES2022
