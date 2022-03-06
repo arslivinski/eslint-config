@@ -11,9 +11,13 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    es2016: true,
     es2017: true,
+    es2018: true,
+    es2019: true,
     es2020: true,
     es2021: true,
+    es2022: true,
   },
   parserOptions: {
     ecmaVersion: 2022,
@@ -287,6 +291,7 @@ module.exports = {
       ERROR,
       {
         builtinGlobals: true,
+        ignoreOnInitialization: true,
         allow: confusingBrowserGlobals,
       },
     ],

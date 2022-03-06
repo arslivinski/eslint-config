@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added env globals for ES2016, ES2018, ES2019 and ES2022
+- Added option 'ignoreOnInitialization' to the rule 'no-shadow'
+
+### Changed
+
+- Update ESLint to 8.10.0
+- Update eslint-plugin-import to 2.25.4
+- Update eslint-plugin-react to 7.29.3
+
 ## [1.0.0-alpha.10] - 2021-12-21
 
 ### Added
