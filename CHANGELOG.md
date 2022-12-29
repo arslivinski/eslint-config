@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.12] - 2022-12-28
+
 ### Added
 
 - Added the rule 'no-constant-binary-expression'
