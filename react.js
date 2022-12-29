@@ -4,9 +4,7 @@ const OFF = 'off';
 const ERROR = 'error';
 
 module.exports = {
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -71,15 +69,12 @@ module.exports = {
     'react/require-optimization': ERROR,
     'react/require-render-return': ERROR,
     'react/self-closing-comp': ERROR,
-    'react/sort-comp': [ERROR, {
-      order: [
-        'static-methods',
-        'lifecycle',
-        '/^handle.+$/',
-        'everything-else',
-        '/^render.*$/',
-      ],
-    }],
+    'react/sort-comp': [
+      ERROR,
+      {
+        order: ['static-methods', 'lifecycle', '/^handle.+$/', 'everything-else', '/^render.*$/'],
+      },
+    ],
     'react/sort-prop-types': OFF,
     'react/state-in-constructor': OFF,
     'react/static-property-placement': OFF,
@@ -90,11 +85,14 @@ module.exports = {
     'react/jsx-child-element-spacing': OFF,
     'react/jsx-closing-bracket-location': ERROR,
     'react/jsx-closing-tag-location': ERROR,
-    'react/jsx-curly-brace-presence': [ERROR, {
-      props: 'never',
-      children: 'never',
-      propElementValues: 'always',
-    }],
+    'react/jsx-curly-brace-presence': [
+      ERROR,
+      {
+        props: 'never',
+        children: 'never',
+        propElementValues: 'always',
+      },
+    ],
     'react/jsx-curly-newline': ERROR,
     'react/jsx-curly-spacing': ERROR,
     'react/jsx-equals-spacing': ERROR,
@@ -102,22 +100,30 @@ module.exports = {
     'react/jsx-first-prop-new-line': ERROR,
     'react/jsx-fragments': [ERROR, 'syntax'],
     'react/jsx-handler-names': ERROR,
-    'react/jsx-indent': [ERROR, 2, {
-      checkAttributes: true,
-      indentLogicalExpressions: true,
-    }],
+    'react/jsx-indent': [
+      ERROR,
+      2,
+      {
+        checkAttributes: true,
+        indentLogicalExpressions: true,
+      },
+    ],
     'react/jsx-indent-props': [ERROR, 2],
     'react/jsx-key': ERROR,
     'react/jsx-max-depth': OFF,
-    'react/jsx-max-props-per-line': [ERROR, {
-      maximum: 1,
-      when: 'multiline',
-    }],
+    'react/jsx-max-props-per-line': [
+      ERROR,
+      {
+        maximum: 1,
+        when: 'multiline',
+      },
+    ],
     'react/jsx-newline': OFF,
     'react/jsx-no-bind': OFF,
     'react/jsx-no-comment-textnodes': ERROR,
     'react/jsx-no-constructed-context-values': OFF,
     'react/jsx-no-duplicate-props': ERROR,
+    'react/jsx-no-leaked-render': ERROR,
     'react/jsx-no-literals': OFF,
     'react/jsx-no-script-url': ERROR,
     'react/jsx-no-target-blank': ERROR,
@@ -133,14 +139,17 @@ module.exports = {
     'react/jsx-tag-spacing': ERROR,
     'react/jsx-uses-react': OFF, // Enable if using old react and babel
     'react/jsx-uses-vars': ERROR,
-    'react/jsx-wrap-multilines': [ERROR, {
-      arrow: 'parens-new-line',
-      assignment: 'parens-new-line',
-      condition: 'parens-new-line',
-      declaration: 'parens-new-line',
-      logical: 'parens-new-line',
-      prop: 'parens-new-line',
-      return: 'parens-new-line',
-    }],
+    'react/jsx-wrap-multilines': [
+      ERROR,
+      {
+        arrow: 'parens-new-line',
+        assignment: 'parens-new-line',
+        condition: 'parens-new-line',
+        declaration: 'parens-new-line',
+        logical: 'parens-new-line',
+        prop: 'parens-new-line',
+        return: 'parens-new-line',
+      },
+    ],
   },
 };

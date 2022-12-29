@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added the rule 'no-constant-binary-expression'
+- Added the option 'allowEmptyCase' to the rule 'no-fallthrough'
+- Added the rule 'no-new-native-nonconstructor'
+- Added the rule 'no-empty-static-block'
+- Added the rule 'react/jsx-no-leaked-render'
+
+### Changed
+
+- Update ESLint to 8.30.0
+- Update eslint-plugin-import to 2.26.0
+- Update eslint-plugin-react to 7.31.11
+
 ## [1.0.0-alpha.11] - 2022-03-06
 
 ### Added
