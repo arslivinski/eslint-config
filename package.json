@@ -12,10 +12,14 @@
   },
   "peerDependencies": {
     "eslint": "^8.30.0",
-    "eslint-plugin-react": "^7.31.11"
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
       "optional": true
     }
   },
@@ -26,7 +30,8 @@
   "devDependencies": {
     "eslint": "^8.30.0",
     "eslint-find-rules": "^4.1.0",
-    "eslint-plugin-react": "^7.31.11"
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "author": {
     "name": "Anderson Roberto Slivinski",

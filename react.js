@@ -4,15 +4,21 @@ const OFF = 'off';
 const ERROR = 'error';
 
 module.exports = {
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
   },
   settings: {
-    react: {
+    'react': {
       version: 'detect',
+    },
+    'import/extensions': ['.js', '.jsx', '.mjs', '.cjs'],
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.mjs', '.cjs'],
+      },
     },
   },
   rules: {
@@ -26,7 +32,12 @@ module.exports = {
     'react/forbid-elements': OFF,
     'react/forbid-foreign-prop-types': ERROR,
     'react/forbid-prop-types': OFF,
-    'react/function-component-definition': [ERROR, { namedComponents: 'function-declaration' }],
+    'react/function-component-definition': [
+      ERROR,
+      {
+        namedComponents: 'function-declaration',
+      },
+    ],
     'react/hook-use-state': ERROR,
     'react/iframe-missing-sandbox': ERROR,
     'react/no-access-state-in-setstate': ERROR,
@@ -34,8 +45,8 @@ module.exports = {
     'react/no-array-index-key': ERROR,
     'react/no-arrow-function-lifecycle': ERROR,
     'react/no-children-prop': ERROR,
-    'react/no-danger': ERROR,
     'react/no-danger-with-children': ERROR,
+    'react/no-danger': ERROR,
     'react/no-deprecated': ERROR,
     'react/no-did-mount-set-state': OFF,
     'react/no-did-update-set-state': OFF,
@@ -43,8 +54,8 @@ module.exports = {
     'react/no-find-dom-node': ERROR,
     'react/no-invalid-html-attribute': ERROR,
     'react/no-is-mounted': ERROR,
-    'react/no-namespace': ERROR,
     'react/no-multi-comp': ERROR,
+    'react/no-namespace': ERROR,
     'react/no-redundant-should-component-update': ERROR,
     'react/no-render-return-value': ERROR,
     'react/no-set-state': OFF,
@@ -81,10 +92,9 @@ module.exports = {
     'react/style-prop-object': ERROR,
     'react/void-dom-elements-no-children': ERROR,
 
+    // JSX ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
     'react/jsx-boolean-value': ERROR,
-    'react/jsx-child-element-spacing': OFF,
-    'react/jsx-closing-bracket-location': ERROR,
-    'react/jsx-closing-tag-location': ERROR,
     'react/jsx-curly-brace-presence': [
       ERROR,
       {
@@ -93,32 +103,11 @@ module.exports = {
         propElementValues: 'always',
       },
     ],
-    'react/jsx-curly-newline': ERROR,
-    'react/jsx-curly-spacing': ERROR,
-    'react/jsx-equals-spacing': ERROR,
     'react/jsx-filename-extension': OFF,
-    'react/jsx-first-prop-new-line': ERROR,
     'react/jsx-fragments': [ERROR, 'syntax'],
     'react/jsx-handler-names': ERROR,
-    'react/jsx-indent': [
-      ERROR,
-      2,
-      {
-        checkAttributes: true,
-        indentLogicalExpressions: true,
-      },
-    ],
-    'react/jsx-indent-props': [ERROR, 2],
     'react/jsx-key': ERROR,
     'react/jsx-max-depth': OFF,
-    'react/jsx-max-props-per-line': [
-      ERROR,
-      {
-        maximum: 1,
-        when: 'multiline',
-      },
-    ],
-    'react/jsx-newline': OFF,
     'react/jsx-no-bind': OFF,
     'react/jsx-no-comment-textnodes': ERROR,
     'react/jsx-no-constructed-context-values': OFF,
@@ -129,27 +118,47 @@ module.exports = {
     'react/jsx-no-target-blank': ERROR,
     'react/jsx-no-undef': ERROR,
     'react/jsx-no-useless-fragment': ERROR,
-    'react/jsx-one-expression-per-line': OFF,
     'react/jsx-pascal-case': ERROR,
-    'react/jsx-props-no-multi-spaces': ERROR,
     'react/jsx-props-no-spreading': OFF,
     'react/jsx-sort-default-props': OFF,
-    'react/jsx-sort-props': OFF,
-    'react/jsx-space-before-closing': OFF, // DEPRECATED
-    'react/jsx-tag-spacing': ERROR,
-    'react/jsx-uses-react': OFF, // Enable if using old react and babel
-    'react/jsx-uses-vars': ERROR,
-    'react/jsx-wrap-multilines': [
+    'react/jsx-sort-props': [
       ERROR,
       {
-        arrow: 'parens-new-line',
-        assignment: 'parens-new-line',
-        condition: 'parens-new-line',
-        declaration: 'parens-new-line',
-        logical: 'parens-new-line',
-        prop: 'parens-new-line',
-        return: 'parens-new-line',
+        callbacksLast: false,
+        shorthandFirst: false,
+        shorthandLast: true,
+        multiline: 'ignore',
+        ignoreCase: true,
+        noSortAlphabetically: true,
+        reservedFirst: true,
+        locale: 'auto',
       },
     ],
+    'react/jsx-uses-react': OFF, // Enable if using old react and babel
+    'react/jsx-uses-vars': ERROR,
+
+    // Style rules ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    'react/jsx-child-element-spacing': OFF,
+    'react/jsx-closing-bracket-location': OFF,
+    'react/jsx-closing-tag-location': OFF,
+    'react/jsx-curly-newline': OFF,
+    'react/jsx-curly-spacing': OFF,
+    'react/jsx-equals-spacing': OFF,
+    'react/jsx-first-prop-new-line': OFF,
+    'react/jsx-indent-props': OFF,
+    'react/jsx-indent': OFF,
+    'react/jsx-max-props-per-line': OFF,
+    'react/jsx-newline': OFF,
+    'react/jsx-one-expression-per-line': OFF,
+    'react/jsx-props-no-multi-spaces': OFF,
+    'react/jsx-space-before-closing': OFF, // DEPRECATED
+    'react/jsx-tag-spacing': OFF,
+    'react/jsx-wrap-multilines': OFF,
+
+    // React Hooks ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    'react-hooks/rules-of-hooks': ERROR,
+    'react-hooks/exhaustive-deps': ERROR,
   },
 };

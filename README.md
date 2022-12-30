@@ -34,7 +34,7 @@ This configuration also provides a set of rules for React projects. To use you
 have to install the required plugin
 
 ```sh
-npm install -D eslint-plugin-react
+npm install -D eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 and extend this config on your `.eslintrc.js`

@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Added
+
+#### React
+
+- Added the rule `react-hooks/exhaustive-deps`
+- Added the rule `react-hooks/rules-of-hooks`
+
 ### Changed
 
 #### Core
@@ -101,6 +108,28 @@
   - `wrap-iife`
   - `wrap-regex`
   - `yield-star-spacing`
+
+#### React
+
+- Added settings to resolve `.jsx` extensions
+- Turned on the rule `react/jsx-sort-props`
+- Turned off the following stylistic rules in preference of a formatter:
+  - `react/jsx-child-element-spacing`
+  - `react/jsx-closing-bracket-location`
+  - `react/jsx-closing-tag-location`
+  - `react/jsx-curly-newline`
+  - `react/jsx-curly-spacing`
+  - `react/jsx-equals-spacing`
+  - `react/jsx-first-prop-new-line`
+  - `react/jsx-indent-props`
+  - `react/jsx-indent`
+  - `react/jsx-max-props-per-line`
+  - `react/jsx-newline`
+  - `react/jsx-one-expression-per-line`
+  - `react/jsx-props-no-multi-spaces`
+  - `react/jsx-space-before-closing`
+  - `react/jsx-tag-spacing`
+  - `react/jsx-wrap-multilines`
 
 ## [1.0.0-alpha.12] - 2022-12-28
 
