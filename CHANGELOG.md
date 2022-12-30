@@ -2,6 +2,106 @@
 
 ## [Unreleased]
 
+### Changed
+
+#### Core
+
+- Removed the `ignorePatterns` option
+- Removed unnecessary envs (https://github.com/eslint/eslint/discussions/16725)
+- Removed the `browser` env
+- Changed the `parserOptions` option `ecmaVersion` to `latest`
+- Removed the `parserOptions` option `sourceType`
+- Added settings to resolve `.mjs` and `.cjs` extensions
+- The option `allowImplicit` of the rule `array-callback-return` to `false`
+- The option `ignoreDestructuring` of the rule `camelcase` to `true`
+- Added the option `ignoreGlobals` to the rule `camelcase`
+- The option `ignoreImports` of the rule `camelcase` to `true`
+- Removed the option `exceptMethods` of the rule `class-methods-use-this`
+- Removed the option `commentPattern` of the rule `default-case`
+- Removed the option `allowKeywords` of the rule `dot-notation`
+- Turned on the rule `new-cap`
+- Turned on the rule `no-div-regex`
+- Added the option `allowSwitch` to the rule `no-labels`
+- Turned off the rule `no-new-symbol` as it is handled by the rule `no-new-native-nonconstructor`
+- Added the option `allowForLoopAfterthoughts` to the rule `no-plusplus`
+- Removed the options `isFinite` and `isNaN` from the rule `no-restricted-globals`
+- Turned on the rule `no-underscore-dangle`
+- Turned on the rule `no-unneeded-ternary`
+- Turned on the rule `no-unused-expressions`
+- Added the option `allowNamedExports` to the rule `no-use-before-define`
+- Added the option `avoidExplicitReturnArrows` to the rule `object-shorthand`
+- Turned on the rule `one-var-declaration-per-line`
+- Turned on the rule `require-await`
+- Turned on the rule `require-unicode-regexp`
+- Turned on the rule `strict`
+- Turned off the rule `import/exports-last`
+- Turned off the rule `import/group-exports`
+- The option `groups` of the rule `import/order`, grouping `parent` and `sibling` imports
+- The option `newlines-between` of the rule `import/order` to `always`
+- Turned off the following stylistic rules in preference of a formatter:
+  - `array-bracket-newline`
+  - `array-bracket-spacing`
+  - `array-element-newline`
+  - `arrow-parens`
+  - `arrow-spacing`
+  - `block-spacing`
+  - `brace-style`
+  - `comma-dangle`
+  - `comma-spacing`
+  - `comma-style`
+  - `computed-property-spacing`
+  - `dot-location`
+  - `eol-last`
+  - `func-call-spacing`
+  - `function-call-argument-newline`
+  - `function-paren-newline`
+  - `generator-star-spacing`
+  - `implicit-arrow-linebreak`
+  - `indent`
+  - `jsx-quotes`
+  - `key-spacing`
+  - `keyword-spacing`
+  - `line-comment-position`
+  - `linebreak-style`
+  - `lines-around-comment`
+  - `lines-between-class-members`
+  - `max-len`
+  - `max-statements-per-line`
+  - `multiline-ternary`
+  - `new-parens`
+  - `newline-per-chained-call`
+  - `no-extra-parens`
+  - `no-mixed-spaces-and-tabs`
+  - `no-multi-spaces`
+  - `no-multiple-empty-lines`
+  - `no-tabs`
+  - `no-trailing-spaces`
+  - `no-whitespace-before-property`
+  - `nonblock-statement-body-position`
+  - `object-curly-newline`
+  - `object-curly-spacing`
+  - `object-property-newline`
+  - `operator-linebreak`
+  - `padded-blocks`
+  - `padding-line-between-statements`
+  - `quotes`
+  - `rest-spread-spacing`
+  - `semi`
+  - `semi-spacing`
+  - `semi-style`
+  - `space-before-blocks`
+  - `space-before-function-paren`
+  - `space-in-parens`
+  - `space-infix-ops`
+  - `space-unary-ops`
+  - `switch-colon-spacing`
+  - `template-curly-spacing`
+  - `template-tag-spacing`
+  - `unicode-bom`
+  - `wrap-iife`
+  - `wrap-regex`
+  - `yield-star-spacing`
+
 ## [1.0.0-alpha.12] - 2022-12-28
 
 ### Added
