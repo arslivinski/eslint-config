@@ -8,6 +8,10 @@
 
 - Plugin `unicorn` and all it's rules
 
+#### TypeScript
+
+- TypeScript configuration with all it's rules
+
 ### Changed
 
 #### Core
