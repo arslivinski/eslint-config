@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.13] - 2022-12-30
+
 ### Added
 
 #### React
@@ -248,7 +250,8 @@
 - Basic ruleset using the ESLint rules
 - Rules for module import/export
 
-[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.12...HEAD
+[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.13...HEAD
+[1.0.0-alpha.13]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.12...1.0.0-alpha.13
 [1.0.0-alpha.12]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.11...1.0.0-alpha.12
 [1.0.0-alpha.11]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.10...1.0.0-alpha.11
 [1.0.0-alpha.10]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.9...1.0.0-alpha.10
