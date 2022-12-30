@@ -48,5 +48,23 @@
   "keywords": [
     "eslint",
     "eslintconfig"
-  ]
+  ],
+  "eslintConfig": {
+    "ignorePatterns": [
+      "!.*.js",
+      "node_modules/"
+    ],
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "script"
+    },
+    "extends": [
+      "./index.js"
+    ],
+    "rules": {
+      "import/no-commonjs": "off"
+    }
+  }
 }
