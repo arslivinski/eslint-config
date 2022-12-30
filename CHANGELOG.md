@@ -2,6 +2,23 @@
 
 ## [Unreleased]
 
+### Added
+
+#### Core
+
+- Plugin `unicorn` and all it's rules
+
+### Changed
+
+#### Core
+
+- Re-added the `parserOptions` option `sourceType`
+- Removed settings to resolve `.mjs` and `.cjs` extensions
+
+#### React
+
+- Removed settings to resolve `.mjs` and `.cjs` extensions
+
 ## [1.0.0-alpha.13] - 2022-12-30
 
 ### Added

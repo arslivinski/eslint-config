@@ -14,10 +14,10 @@ module.exports = {
     'react': {
       version: 'detect',
     },
-    'import/extensions': ['.js', '.jsx', '.mjs', '.cjs'],
+    'import/extensions': ['.js', '.jsx'],
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.mjs', '.cjs'],
+        extensions: ['.js', '.jsx'],
       },
     },
   },
