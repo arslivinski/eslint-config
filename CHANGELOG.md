@@ -247,3 +247,17 @@
 
 - Basic ruleset using the ESLint rules
 - Rules for module import/export
+
+[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.12...HEAD
+[1.0.0-alpha.12]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.11...1.0.0-alpha.12
+[1.0.0-alpha.11]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.10...1.0.0-alpha.11
+[1.0.0-alpha.10]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.9...1.0.0-alpha.10
+[1.0.0-alpha.9]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.8...1.0.0-alpha.9
+[1.0.0-alpha.8]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.7...1.0.0-alpha.8
+[1.0.0-alpha.7]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.6...1.0.0-alpha.7
+[1.0.0-alpha.6]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.5...1.0.0-alpha.6
+[1.0.0-alpha.5]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.4...1.0.0-alpha.5
+[1.0.0-alpha.4]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.3...1.0.0-alpha.4
+[1.0.0-alpha.3]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.2...1.0.0-alpha.3
+[1.0.0-alpha.2]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.1...1.0.0-alpha.2
+[1.0.0-alpha.1]: https://github.com/arslivinski/eslint-config/releases/tag/1.0.0-alpha.1
