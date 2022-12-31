@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Changed
+
+#### Core
+
+- Turned off the rule `no-undefined`, the ideia is to not use `null` anymore
+
 ## [1.0.0-alpha.15] - 2022-12-31
 
 ### Changed

@@ -297,7 +297,7 @@ module.exports = {
     'no-ternary': OFF,
     'no-throw-literal': ERROR,
     'no-undef-init': ERROR,
-    'no-undefined': ERROR,
+    'no-undefined': OFF,
     'no-underscore-dangle': ERROR,
     'no-unneeded-ternary': ERROR,
     'no-unused-expressions': [
