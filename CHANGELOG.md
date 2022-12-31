@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Changed
+
+#### Core
+
+- Removed the config `reportUnusedDisableDirectives`
+
 ## [1.0.0-alpha.14] - 2022-12-30
 
 ### Added

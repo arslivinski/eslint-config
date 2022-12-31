@@ -15,7 +15,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['import', 'unicorn'],
-  reportUnusedDisableDirectives: true,
   rules: {
     // Possible Problems ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
