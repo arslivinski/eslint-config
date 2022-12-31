@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.16] - 2022-12-31
+
 ### Changed
 
 #### Core
