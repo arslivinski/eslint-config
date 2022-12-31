@@ -4,6 +4,8 @@
 
 ### Changed
 
+- Updated ESLint to 8.31.0
+
 #### Core
 
 - Removed the config `reportUnusedDisableDirectives`
