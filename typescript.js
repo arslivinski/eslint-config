@@ -362,6 +362,10 @@ module.exports = {
     '@typescript-eslint/space-infix-ops': OFF,
     '@typescript-eslint/type-annotation-spacing': OFF,
 
+    // Core Overrides ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    'no-undef': OFF, // https://github.com/eslint/typescript-eslint-parser/issues/437
+
     // Import Overrides ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     'import/extensions': [

@@ -8,6 +8,10 @@
 
 - Removed the config `reportUnusedDisableDirectives`
 
+#### TypeScript
+
+- Turned off the rule `no-undef` due a bug
+
 ## [1.0.0-alpha.14] - 2022-12-30
 
 ### Added
