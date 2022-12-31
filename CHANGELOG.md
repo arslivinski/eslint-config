@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.15] - 2022-12-31
+
 ### Changed
 
 - Updated ESLint to 8.31.0
@@ -285,7 +287,8 @@
 - Basic ruleset using the ESLint rules
 - Rules for module import/export
 
-[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.14...HEAD
+[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.15...HEAD
+[1.0.0-alpha.15]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.14...1.0.0-alpha.15
 [1.0.0-alpha.14]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.13...1.0.0-alpha.14
 [1.0.0-alpha.13]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.12...1.0.0-alpha.13
 [1.0.0-alpha.12]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.11...1.0.0-alpha.12
