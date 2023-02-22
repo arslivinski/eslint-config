@@ -133,6 +133,48 @@ module.exports = {
 };
 ```
 
+### Node
+
+You can use this configuration for pure Node applications. For this, you need to
+install the following extra package:
+
+```sh
+npm install -D eslint-plugin-n
+```
+
+Then, you need to set the Node version on the `engine` field of your `package.json`.
+Example:
+
+```json
+{
+  "name": "your-module",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18.14.0"
+  }
+}
+```
+
+and finally, extend this config on your `.eslintrc.js`. If you are using modules:
+
+```js
+'use strict';
+
+module.exports = {
+  extends: ['@arslivinski/eslint-config', '@arslivinski/eslint-config/module', '@arslivinski/eslint-config/node'],
+};
+```
+
+...or if you are using CommonJS:
+
+```js
+'use strict';
+
+module.exports = {
+  extends: ['@arslivinski/eslint-config', '@arslivinski/eslint-config/commonjs', '@arslivinski/eslint-config/node'],
+};
+```
+
 ## Modules
 
 This package provide the following modules to be used

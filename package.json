@@ -7,6 +7,7 @@
   "scripts": {
     "test": "npm run -s test:base && npm run -s test:react && npm run -s test:typescript",
     "test:base": "eslint-find-rules --unused base.js",
+    "test:node": "eslint-find-rules --unused node.js --no-core",
     "test:react": "eslint-find-rules --unused react.js --no-core",
     "test:typescript": "eslint-find-rules --unused typescript.js --no-core",
     "lint": "eslint ."
@@ -16,6 +17,7 @@
     "@typescript-eslint/parser": "^5.53.0",
     "eslint": "^8.34.0",
     "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "*"
@@ -25,6 +27,9 @@
       "optional": true
     },
     "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-n": {
       "optional": true
     },
     "@typescript-eslint/eslint-plugin": {
@@ -51,6 +56,7 @@
     "eslint": "^8.34.0",
     "eslint-find-rules": "^4.1.0",
     "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^4.9.5"
