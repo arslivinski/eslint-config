@@ -7,6 +7,7 @@ const WARN = 'warn';
 const ERROR = 'error';
 
 module.exports = {
+  reportUnusedDisableDirectives: true,
   env: {
     es2022: true,
   },
@@ -444,6 +445,7 @@ module.exports = {
 
     // Import ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    'import/consistent-type-specifier-style': [ERROR, 'prefer-top-level'],
     'import/default': ERROR,
     'import/dynamic-import-chunkname': OFF, // Enable if using WebPack
     'import/export': ERROR,
@@ -485,6 +487,7 @@ module.exports = {
       },
     ],
     'import/no-dynamic-require': ERROR,
+    'import/no-empty-named-blocks': ERROR,
     'import/no-extraneous-dependencies': [
       ERROR,
       {

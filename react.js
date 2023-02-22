@@ -11,14 +11,8 @@ module.exports = {
     },
   },
   settings: {
-    'react': {
+    react: {
       version: 'detect',
-    },
-    'import/extensions': ['.js', '.jsx'],
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx'],
-      },
     },
   },
   rules: {
@@ -56,6 +50,7 @@ module.exports = {
     'react/no-is-mounted': ERROR,
     'react/no-multi-comp': ERROR,
     'react/no-namespace': ERROR,
+    'react/no-object-type-as-default-prop': ERROR,
     'react/no-redundant-should-component-update': ERROR,
     'react/no-render-return-value': ERROR,
     'react/no-set-state': OFF,
@@ -86,6 +81,7 @@ module.exports = {
         order: ['static-methods', 'lifecycle', '/^handle.+$/', 'everything-else', '/^render.*$/'],
       },
     ],
+    'react/sort-default-props': OFF,
     'react/sort-prop-types': OFF,
     'react/state-in-constructor': OFF,
     'react/static-property-placement': OFF,

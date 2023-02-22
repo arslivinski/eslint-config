@@ -2,11 +2,51 @@
 
 ## [Unreleased]
 
+### Added
+
+#### Base
+
+- Added the config `reportUnusedDisableDirectives` back
+- Added the rule `import/consistent-type-specifier-style`
+- Added the rule `import/no-empty-named-blocks`
+
+#### React
+
+- Added the rule `react/no-object-type-as-default-prop`
+- Added the rule `react/sort-default-props`
+
+#### TypeScript
+
+- Added the rule `@typescript-eslint/block-spacing`
+- Added the rule `@typescript-eslint/key-spacing`
+- Added the rule `@typescript-eslint/no-import-type-side-effects`
+- Added the rule `@typescript-eslint/no-mixed-enums`
+
+### Changed
+
+- Updated `eslint` to 8.34.0
+
+#### Base
+
+- Updated `eslint-plugin-import` to 2.27.5
+
+#### React
+
+- Updated `eslint-plugin-react` to 7.32.2
+
+#### TypeScript
+
+- Updated `@typescript-eslint/eslint-plugin` to 5.53.0
+- Updated `@typescript-eslint/parser` to 5.53.0
+- Updated `eslint-import-resolver-typescript` to 3.5.3
+- Changed the `typescript` peerDependency to accept any version
+- Changed file extensions resolution
+
 ## [1.0.0-alpha.16] - 2022-12-31
 
 ### Changed
 
-#### Core
+#### Base
 
 - Turned off the rule `no-undefined`, the ideia is to not use `null` anymore
 
@@ -16,7 +56,7 @@
 
 - Updated ESLint to 8.31.0
 
-#### Core
+#### Base
 
 - Removed the config `reportUnusedDisableDirectives`
 
@@ -28,7 +68,7 @@
 
 ### Added
 
-#### Core
+#### Base
 
 - Plugin `unicorn` and all it's rules
 
@@ -38,7 +78,7 @@
 
 ### Changed
 
-#### Core
+#### Base
 
 - Re-added the `parserOptions` option `sourceType`
 - Removed settings to resolve `.mjs` and `.cjs` extensions
@@ -58,7 +98,7 @@
 
 ### Changed
 
-#### Core
+#### Base
 
 - Removed the `ignorePatterns` option
 - Removed unnecessary envs (https://github.com/eslint/eslint/discussions/16725)

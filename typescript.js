@@ -12,16 +12,13 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   settings: {
-    'import/extensions': ['.ts', '.tsx', '.js', '.jsx'],
+    'import/extensions': ['.ts', '.tsx', '.cts', '.mts'],
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.cts', '.mts'],
     },
     'import/resolver': {
       typescript: true,
-      node: {
-        extensions: ['.js', '.jsx'],
-      },
     },
   },
   rules: {
@@ -185,11 +182,13 @@ module.exports = {
     '@typescript-eslint/no-extraneous-class': ERROR,
     '@typescript-eslint/no-floating-promises': ERROR,
     '@typescript-eslint/no-for-in-array': ERROR,
+    '@typescript-eslint/no-import-type-side-effects': ERROR,
     '@typescript-eslint/no-inferrable-types': [ERROR, { ignoreParameters: true, ignoreProperties: true }],
     '@typescript-eslint/no-invalid-void-type': ERROR,
     '@typescript-eslint/no-meaningless-void-operator': ERROR,
     '@typescript-eslint/no-misused-new': ERROR,
     '@typescript-eslint/no-misused-promises': ERROR,
+    '@typescript-eslint/no-mixed-enums': ERROR,
     '@typescript-eslint/no-namespace': ERROR,
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': ERROR,
     '@typescript-eslint/no-non-null-asserted-optional-chain': ERROR,
@@ -250,7 +249,7 @@ module.exports = {
     'dot-notation': OFF,
     '@typescript-eslint/dot-notation': [ERROR, { allowKeywords: true }],
 
-    // "init-declarations": OFF,
+    'init-declarations': OFF,
     '@typescript-eslint/init-declarations': OFF,
 
     'no-array-constructor': OFF,
@@ -277,13 +276,13 @@ module.exports = {
     'no-loss-of-precision': OFF,
     '@typescript-eslint/no-loss-of-precision': ERROR,
 
-    // 'no-magic-numbers': OFF,
+    'no-magic-numbers': OFF,
     '@typescript-eslint/no-magic-numbers': OFF,
 
     'no-redeclare': OFF,
     '@typescript-eslint/no-redeclare': ERROR,
 
-    // 'no-restricted-imports': OFF,
+    'no-restricted-imports': OFF,
     '@typescript-eslint/no-restricted-imports': OFF,
 
     'no-shadow': OFF,
@@ -344,11 +343,13 @@ module.exports = {
 
     // Style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    '@typescript-eslint/block-spacing': OFF,
     '@typescript-eslint/brace-style': OFF,
     '@typescript-eslint/comma-dangle': OFF,
     '@typescript-eslint/comma-spacing': OFF,
     '@typescript-eslint/func-call-spacing': OFF,
     '@typescript-eslint/indent': OFF,
+    '@typescript-eslint/key-spacing': OFF,
     '@typescript-eslint/keyword-spacing': OFF,
     '@typescript-eslint/lines-between-class-members': OFF,
     '@typescript-eslint/member-delimiter-style': OFF,
