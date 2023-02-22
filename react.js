@@ -4,12 +4,12 @@ const OFF = 'off';
 const ERROR = 'error';
 
 module.exports = {
-  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
   },
+  plugins: ['react', 'react-hooks'],
   settings: {
     react: {
       version: 'detect',

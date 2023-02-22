@@ -7,9 +7,6 @@ const ERROR = 'error';
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    sourceType: 'module',
-  },
   plugins: ['@typescript-eslint'],
   settings: {
     'import/extensions': ['.ts', '.tsx', '.cts', '.mts'],
@@ -162,7 +159,7 @@ module.exports = {
       {
         selector: 'variable',
         modifiers: ['destructured'],
-        format: null, // eslint-disable-line unicorn/no-null
+        format: null,
       },
       {
         selector: 'typeLike',
@@ -382,4 +379,13 @@ module.exports = {
 
     'react/prop-types': OFF, // Use Types instead
   },
+  overrides: [
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'import/unambiguous': OFF,
+        'import/no-default-export': OFF,
+      },
+    },
+  ],
 };

@@ -1,7 +1,5 @@
 'use strict';
 
-const confusingBrowserGlobals = require('confusing-browser-globals');
-
 const OFF = 'off';
 const WARN = 'warn';
 const ERROR = 'error';
@@ -13,7 +11,6 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
   },
   plugins: ['import', 'unicorn'],
   rules: {
@@ -137,7 +134,14 @@ module.exports = {
 
     // Suggestions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    'accessor-pairs': OFF,
+    'accessor-pairs': [
+      ERROR,
+      {
+        getWithoutSet: false,
+        setWithoutGet: true,
+        enforceForClassMembers: true,
+      },
+    ],
     'arrow-body-style': OFF,
     'block-scoped-var': ERROR,
     'camelcase': [
@@ -199,7 +203,7 @@ module.exports = {
         properties: true,
       },
     ],
-    'no-alert': ERROR,
+    'no-alert': OFF, // Handled on 'browser'
     'no-array-constructor': ERROR,
     'no-bitwise': OFF,
     'no-caller': ERROR,
@@ -278,19 +282,19 @@ module.exports = {
         restrictedNamedExports: ['default', 'then'],
       },
     ],
-    'no-restricted-globals': [ERROR, ...confusingBrowserGlobals],
+    'no-restricted-globals': OFF, // Handled on 'browser'
     'no-restricted-imports': OFF,
     'no-restricted-properties': OFF,
     'no-restricted-syntax': OFF,
     'no-return-assign': [ERROR, 'always'],
     'no-return-await': ERROR,
-    'no-script-url': ERROR,
+    'no-script-url': OFF, // Handled on 'browser'
     'no-sequences': ERROR,
     'no-shadow': [
       ERROR,
       {
-        allow: confusingBrowserGlobals,
         builtinGlobals: true,
+        hoist: 'functions',
         ignoreOnInitialization: true,
       },
     ],
@@ -519,10 +523,17 @@ module.exports = {
       {
         'groups': ['builtin', 'external', 'internal', ['parent', 'sibling']],
         'newlines-between': 'always',
+        'warnOnUnassignedImports': false,
         'alphabetize': {
           order: 'asc',
           caseInsensitive: true,
         },
+        'pathGroups': [
+          {
+            pattern: '~/**',
+            group: 'internal',
+          },
+        ],
       },
     ],
     'import/prefer-default-export': OFF,
@@ -546,7 +557,7 @@ module.exports = {
     ],
     'unicorn/explicit-length-check': ERROR,
     'unicorn/filename-case': OFF, // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/1484
-    'unicorn/import-style': OFF,
+    'unicorn/import-style': OFF, // Handled by the import plugin
     'unicorn/new-for-builtins': ERROR,
     'unicorn/no-abusive-eslint-disable': ERROR,
     'unicorn/no-array-callback-reference': ERROR,
@@ -556,7 +567,7 @@ module.exports = {
     'unicorn/no-array-reduce': ERROR,
     'unicorn/no-await-expression-member': ERROR,
     'unicorn/no-console-spaces': ERROR,
-    'unicorn/no-document-cookie': ERROR,
+    'unicorn/no-document-cookie': OFF, // Handled on 'browser'
     'unicorn/no-empty-file': ERROR,
     'unicorn/no-for-loop': ERROR,
     'unicorn/no-hex-escape': ERROR,
@@ -567,9 +578,9 @@ module.exports = {
     'unicorn/no-negated-condition': ERROR,
     'unicorn/no-new-array': ERROR,
     'unicorn/no-new-buffer': ERROR,
-    'unicorn/no-null': ERROR,
+    'unicorn/no-null': OFF,
     'unicorn/no-object-as-default-parameter': ERROR,
-    'unicorn/no-process-exit': ERROR,
+    'unicorn/no-process-exit': OFF, // Handled on 'node'
     'unicorn/no-static-only-class': ERROR,
     'unicorn/no-thenable': ERROR,
     'unicorn/no-this-assignment': ERROR,
@@ -587,7 +598,7 @@ module.exports = {
     'unicorn/no-useless-undefined': ERROR,
     'unicorn/no-zero-fractions': ERROR,
     'unicorn/numeric-separators-style': ERROR,
-    'unicorn/prefer-add-event-listener': ERROR,
+    'unicorn/prefer-add-event-listener': OFF, // Handled on 'browser'
     'unicorn/prefer-array-find': ERROR,
     'unicorn/prefer-array-flat-map': ERROR,
     'unicorn/prefer-array-flat': ERROR,
@@ -597,28 +608,28 @@ module.exports = {
     'unicorn/prefer-code-point': ERROR,
     'unicorn/prefer-date-now': ERROR,
     'unicorn/prefer-default-parameters': ERROR,
-    'unicorn/prefer-dom-node-append': ERROR,
-    'unicorn/prefer-dom-node-dataset': ERROR,
-    'unicorn/prefer-dom-node-remove': ERROR,
-    'unicorn/prefer-dom-node-text-content': ERROR,
-    'unicorn/prefer-event-target': OFF,
+    'unicorn/prefer-dom-node-append': OFF, // Handled on 'browser'
+    'unicorn/prefer-dom-node-dataset': OFF, // Handled on 'browser'
+    'unicorn/prefer-dom-node-remove': OFF, // Handled on 'browser'
+    'unicorn/prefer-dom-node-text-content': OFF, // Handled on 'browser'
+    'unicorn/prefer-event-target': OFF, // Handled on 'node'
     'unicorn/prefer-export-from': ERROR,
     'unicorn/prefer-includes': ERROR,
-    'unicorn/prefer-json-parse-buffer': OFF,
-    'unicorn/prefer-keyboard-event-key': ERROR,
+    'unicorn/prefer-json-parse-buffer': OFF, // Handled on 'node'
+    'unicorn/prefer-keyboard-event-key': OFF, // Handled on 'browser'
     'unicorn/prefer-logical-operator-over-ternary': ERROR,
     'unicorn/prefer-math-trunc': ERROR,
-    'unicorn/prefer-modern-dom-apis': ERROR,
+    'unicorn/prefer-modern-dom-apis': OFF, // Handled on 'browser'
     'unicorn/prefer-modern-math-apis': ERROR,
-    'unicorn/prefer-module': ERROR,
+    'unicorn/prefer-module': OFF, // Handled on 'module'
     'unicorn/prefer-native-coercion-functions': ERROR,
     'unicorn/prefer-negative-index': ERROR,
-    'unicorn/prefer-node-protocol': ERROR,
+    'unicorn/prefer-node-protocol': OFF, // Handled on 'node'
     'unicorn/prefer-number-properties': ERROR,
     'unicorn/prefer-object-from-entries': ERROR,
     'unicorn/prefer-optional-catch-binding': ERROR,
     'unicorn/prefer-prototype-methods': ERROR,
-    'unicorn/prefer-query-selector': ERROR,
+    'unicorn/prefer-query-selector': OFF, // Handled on 'browser'
     'unicorn/prefer-reflect-apply': ERROR,
     'unicorn/prefer-regexp-test': ERROR,
     'unicorn/prefer-set-has': ERROR,
@@ -630,13 +641,13 @@ module.exports = {
     'unicorn/prefer-string-trim-start-end': ERROR,
     'unicorn/prefer-switch': ERROR,
     'unicorn/prefer-ternary': OFF,
-    'unicorn/prefer-top-level-await': ERROR,
+    'unicorn/prefer-top-level-await': OFF,
     'unicorn/prefer-type-error': ERROR,
     'unicorn/prevent-abbreviations': ERROR,
     'unicorn/relative-url-style': ERROR,
     'unicorn/require-array-join-separator': ERROR,
     'unicorn/require-number-to-fixed-digits-argument': ERROR,
-    'unicorn/require-post-message-target-origin': OFF,
+    'unicorn/require-post-message-target-origin': OFF, // Handled on 'browser'
     'unicorn/string-content': ERROR,
     'unicorn/switch-case-braces': ERROR,
     'unicorn/template-indent': ERROR,

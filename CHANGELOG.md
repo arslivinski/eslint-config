@@ -2,6 +2,53 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added the following modules:
+  - `browser`
+  - `commonjs`
+  - `module`
+  - `node`
+  - `script`
+  - `scripting`
+  - `serviceworker`
+  - `webextension`
+  - `worker`
+
+#### TypeScript
+
+- Added an override for `*.d.ts` files
+
+### Changed
+
+#### Base
+
+- Removed the sourceType configuration
+- Enabled the rule `accessor-pairs`
+- On the rule `no-shadow`, removed the `allow` option and added the `hoist` option
+- On the rule `import/order`, added the option `warnOnUnassignedImports` and a path group to the root of the package using `~/`
+- Turned off the rule `unicorn/no-null`
+- Turned off the rule `unicorn/prefer-top-level-await`
+- Turned off the following rules as they are configured in other modules now:
+  - `no-alert`
+  - `no-restricted-globals`
+  - `no-script-url`
+  - `unicorn/no-document-cookie`
+  - `unicorn/no-process-exit`
+  - `unicorn/prefer-add-event-listener`
+  - `unicorn/prefer-dom-node-append`
+  - `unicorn/prefer-dom-node-dataset`
+  - `unicorn/prefer-dom-node-remove`
+  - `unicorn/prefer-dom-node-text-content`
+  - `unicorn/prefer-event-target`
+  - `unicorn/prefer-json-parse-buffer`
+  - `unicorn/prefer-keyboard-event-key`
+  - `unicorn/prefer-modern-dom-apis`
+  - `unicorn/prefer-module`
+  - `unicorn/prefer-node-protocol`
+  - `unicorn/prefer-query-selector`
+  - `unicorn/require-post-message-target-origin`
+
 ## [1.0.0-alpha.17] - 2023-02-22
 
 ### Added

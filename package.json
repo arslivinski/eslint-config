@@ -3,10 +3,10 @@
   "version": "1.0.0-alpha.17",
   "description": "Personal set of ESLint configurations",
   "license": "ISC",
-  "main": "index.js",
+  "main": "base.js",
   "scripts": {
     "test": "npm run -s test:base && npm run -s test:react && npm run -s test:typescript",
-    "test:base": "eslint-find-rules --unused index.js",
+    "test:base": "eslint-find-rules --unused base.js",
     "test:react": "eslint-find-rules --unused react.js --no-core",
     "test:typescript": "eslint-find-rules --unused typescript.js --no-core",
     "lint": "eslint ."
@@ -76,18 +76,9 @@
       "!.*.js",
       "node_modules/"
     ],
-    "env": {
-      "node": true
-    },
-    "parserOptions": {
-      "sourceType": "script"
-    },
     "extends": [
-      "./index.js"
-    ],
-    "rules": {
-      "import/no-commonjs": "off",
-      "unicorn/prefer-module": "off"
-    }
+      "./base.js",
+      "./commonjs.js"
+    ]
   }
 }
