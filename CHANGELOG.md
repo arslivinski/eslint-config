@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.0.0-alpha.17] - 2023-02-22
+
 ### Added
 
 #### Base
@@ -335,7 +337,8 @@
 - Basic ruleset using the ESLint rules
 - Rules for module import/export
 
-[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.15...HEAD
+[unreleased]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.16...HEAD
+[1.0.0-alpha.16]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.15...1.0.0-alpha.16
 [1.0.0-alpha.15]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.14...1.0.0-alpha.15
 [1.0.0-alpha.14]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.13...1.0.0-alpha.14
 [1.0.0-alpha.13]: https://github.com/arslivinski/eslint-config/compare/1.0.0-alpha.12...1.0.0-alpha.13
