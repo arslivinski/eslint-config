@@ -4,6 +4,9 @@ const OFF = 'off';
 const WARN = 'warn';
 const ERROR = 'error';
 
+/**
+ * @type {import('eslint').Linter.BaseConfig}
+ */
 module.exports = {
   reportUnusedDisableDirectives: true,
   env: {

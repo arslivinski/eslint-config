@@ -5,7 +5,8 @@
   "license": "ISC",
   "main": "base.js",
   "scripts": {
-    "test": "npm run -s test:base && npm run -s test:react && npm run -s test:typescript",
+    "check": "tsc",
+    "test": "npm run check && npm run -s test:base && npm run -s test:react && npm run -s test:typescript",
     "test:base": "eslint-find-rules --unused base.js",
     "test:node": "eslint-find-rules --unused node.js --no-core",
     "test:react": "eslint-find-rules --unused react.js --no-core",
@@ -51,6 +52,8 @@
     "eslint-plugin-unicorn": "^45.0.2"
   },
   "devDependencies": {
+    "@types/confusing-browser-globals": "^1.0.0",
+    "@types/eslint": "^8.21.1",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "eslint": "^8.35.0",

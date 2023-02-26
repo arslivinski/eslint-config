@@ -4,6 +4,9 @@ const confusingBrowserGlobals = require('confusing-browser-globals');
 
 const ERROR = 'error';
 
+/**
+ * @type {import('eslint').Linter.BaseConfig}
+ */
 module.exports = {
   env: {
     browser: true,

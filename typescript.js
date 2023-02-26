@@ -5,6 +5,9 @@ const confusingBrowserGlobals = require('confusing-browser-globals');
 const OFF = 'off';
 const ERROR = 'error';
 
+/**
+ * @type {import('eslint').Linter.BaseConfig}
+ */
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],

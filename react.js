@@ -3,6 +3,9 @@
 const OFF = 'off';
 const ERROR = 'error';
 
+/**
+ * @type {import('eslint').Linter.BaseConfig}
+ */
 module.exports = {
   parserOptions: {
     ecmaFeatures: {
