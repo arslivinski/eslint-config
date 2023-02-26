@@ -191,3 +191,4 @@ This package provide the following modules to be used
 | worker        | `@arslivinski/eslint-config/worker`        | To be used with Workers                                                                                                                     |
 | webextension  | `@arslivinski/eslint-config/webextension`  | To be used with WebExtensions                                                                                                               |
 | scripting     | `@arslivinski/eslint-config/scripting`     | For script files, like build or release scripts, allowing to usage of `console.log` and imports from `devDependencies`                      |
+| jest          | `@arslivinski/eslint-config/jest`          | For Jest test files. Require `eslint-plugin-jest`                                                                                           |

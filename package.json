@@ -6,8 +6,9 @@
   "main": "base.js",
   "scripts": {
     "check": "tsc",
-    "test": "npm run check && npm run -s test:base && npm run -s test:react && npm run -s test:typescript",
+    "test": "npm run check && npm run -s test:base && npm run -s test:jest && npm run -s test:react && npm run -s test:typescript",
     "test:base": "eslint-find-rules --unused base.js",
+    "test:jest": "eslint-find-rules --unused jest.js --no-core",
     "test:node": "eslint-find-rules --unused node.js --no-core",
     "test:react": "eslint-find-rules --unused react.js --no-core",
     "test:typescript": "eslint-find-rules --unused typescript.js --no-core",
@@ -28,6 +29,9 @@
       "optional": true
     },
     "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
       "optional": true
     },
     "eslint-plugin-n": {
@@ -59,6 +63,7 @@
     "eslint": "^8.35.0",
     "eslint-find-rules": "^4.1.0",
     "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",

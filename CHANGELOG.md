@@ -10,6 +10,10 @@
 
 - Turned off the rule `import/no-unassigned-import`
 
+#### Jest
+
+- Added `jest` modular configuration
+
 ## [1.0.0-alpha.18] - 2023-02-22
 
 ### Added
