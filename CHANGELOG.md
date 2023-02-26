@@ -6,6 +6,10 @@
 
 - Updated `eslint` to 8.35.0
 
+#### Base
+
+- Turned off the rule `import/no-unassigned-import`
+
 ## [1.0.0-alpha.18] - 2023-02-22
 
 ### Added

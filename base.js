@@ -513,7 +513,7 @@ module.exports = {
     'import/no-relative-parent-imports': OFF,
     'import/no-restricted-paths': OFF,
     'import/no-self-import': ERROR,
-    'import/no-unassigned-import': ERROR,
+    'import/no-unassigned-import': OFF,
     'import/no-unresolved': ERROR,
     'import/no-unused-modules': OFF, // Prevents incremental development
     'import/no-useless-path-segments': ERROR,
