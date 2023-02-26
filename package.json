@@ -1,6 +1,6 @@
 {
   "name": "@arslivinski/eslint-config",
-  "version": "1.0.0-alpha.18",
+  "version": "1.0.0-alpha.19",
   "description": "Personal set of ESLint configurations",
   "license": "ISC",
   "main": "base.js",
